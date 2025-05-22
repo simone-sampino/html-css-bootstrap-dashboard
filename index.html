@@ -52,245 +52,260 @@
     </header>
 
     <main class="container">
-        <div class="d-flex justify-content-between my-3">
-            <h1>Catalogo Libri</h1>
-            <a href="./bonus/new-book.html"><button type="button" class="btn btn-primary">Aggiungi Libro</button></a>
-        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between my-3">
+                    <h1>Catalogo Libri</h1>
+                    <a href="./bonus/new-book.html"><button type="button" class="btn btn-primary">Aggiungi
+                            Libro</button></a>
+                </div>
 
-        <!-- #region Table -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Titolo</th>
-                    <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>I pilastri della terra</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>I promessi sposi</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Il signore degli anelli</td>
-                    <td class="d-none d-md-table-cell"><time datetime="2023-10-18">18/10/2023</time></td>
-                    <td><span class="badge bg-warning">In prestito</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Harry Potter e la pietra filosofale</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Il codice Da Vinci</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-danger">Non disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Shining</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>La divina commedia</td>
-                    <td class="d-none d-md-table-cell"><time datetime="2023-09-21">21/09/2023</time></td>
-                    <td><span class="badge bg-warning">In prestito</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Il trono di spade</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Il mondo di Sofia</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-danger">Non disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                    <td class="d-none d-md-table-cell"><time datetime="2023-07-25">25/07/2023</time></td>
-                    <td><span class="badge bg-warning">In prestito</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Il piccolo principe</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>La storia infinita</td>
-                    <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
-                    <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td class="d-flex gap-1 border-bottom-0">
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
-                                aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
-                                aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- #endregion Table -->
-
-        <!-- #region Cards -->
-        <!-- Todo Card -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h2>Todo</h2>
+                <!-- #region Table -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                            <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I pilastri della terra</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>I promessi sposi</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il signore degli anelli</td>
+                            <td class="d-none d-md-table-cell"><time datetime="2023-10-18">18/10/2023</time></td>
+                            <td><span class="badge bg-warning">In prestito</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il codice Da Vinci</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shining</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>La divina commedia</td>
+                            <td class="d-none d-md-table-cell"><time datetime="2023-09-21">21/09/2023</time></td>
+                            <td><span class="badge bg-warning">In prestito</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il trono di spade</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il mondo di Sofia</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                            <td class="d-none d-md-table-cell"><time datetime="2023-07-25">25/07/2023</time></td>
+                            <td><span class="badge bg-warning">In prestito</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Il piccolo principe</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>La storia infinita</td>
+                            <td class="d-none d-md-table-cell"><time datetime="-">-</time></td>
+                            <td><span class="badge text-bg-success">Disponibile</span></td>
+                            <td class="d-flex gap-1 border-bottom-0">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- #endregion Table -->
             </div>
-            <ul class="list-group p-3">
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="chiamare-segreteria" id="firstCheckbox">
-                    <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
-                </li>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="avvisi-prestiti-scaduti"
-                        id="secondCheckbox">
-                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
-                </li>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="ordinare-nuovi-libri"
-                        id="thirdCheckbox">
-                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
-                </li>
-            </ul>
-        </div>
 
-        <!-- F.A.Q. Card -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h2>F.A.Q.</h2>
-            </div>
-            <div class="accordion p-3" id="accordionExample">
-                <div class="accordion-item border-0 border-bottom">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Come
-                            aggiungere un nuovo libro?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
-                            consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
-                            corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
-                            accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius obcaecati
-                            quas.
+            <!-- #region Cards -->
+            <div class="col-lg-3">
+                <!-- Todo Card -->
+                <div class="card mb-4 mt-lg-3">
+                    <div class="card-header">
+                        <h2>Todo</h2>
+                    </div>
+                    <ul class="list-group p-3">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="chiamare-segreteria"
+                                id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="avvisi-prestiti-scaduti"
+                                id="secondCheckbox">
+                            <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="ordinare-nuovi-libri"
+                                id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- F.A.Q. Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>F.A.Q.</h2>
+                    </div>
+                    <div class="accordion p-3" id="accordionExample">
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Come
+                                    aggiungere un nuovo libro?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
+                                    consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
+                                    consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
+                                    corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
+                                    accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius
+                                    obcaecati
+                                    quas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Come
+                                    posso accedere all'anagrafica utenti?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
+                                    consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
+                                    consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
+                                    corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
+                                    accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius
+                                    obcaecati
+                                    quas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">Posso
+                                    usare questa dashboard da mobile?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
+                                    consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
+                                    consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
+                                    corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
+                                    accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius
+                                    obcaecati
+                                    quas.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item border-0 border-bottom">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Come
-                            posso accedere all'anagrafica utenti?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
-                            consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
-                            corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
-                            accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius obcaecati
-                            quas.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item border-0">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Posso
-                            usare questa dashboard da mobile?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Eos, rerum quaerat impedit quod repudiandae, odio
-                            consequatur necessitatibus commodi ut itaque corrupti aut! Vero, esse necessitatibus
-                            corrupti aliquid, molestiae eveniet laboriosam neque atque repellendus fuga aut,
-                            accusantium earum. Ipsam hic ipsum, ullam vel a dicta earum qui, soluta eius obcaecati
-                            quas.
-                        </div>
-                    </div>
-                </div>
             </div>
+            <!-- #endregion Cards -->
         </div>
-        <!-- #endregion Cards -->
 
     </main>
 
