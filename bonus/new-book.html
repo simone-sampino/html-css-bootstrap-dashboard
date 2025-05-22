@@ -47,7 +47,7 @@
     </header>
 
     <main class="container">
-        <h1 class="my-4">Nuovo Libro</h1>
+        <h1 class="my-4 fs-3">Nuovo Libro</h1>
         <form action="">
             <!-- Author Information -->
             <div class="row">
@@ -71,28 +71,32 @@
                 <div id="titleHelp" class="form-text">Titolo versione italiana</div>
             </div>
 
-            <!-- Genre -->
-            <label for="genreSelect" class="form-label">Genere</label>
-            <select class="form-select mb-3" id="genreSelect" aria-label="Seleziona un genere">
-                <option selected>Scegli il genere</option>
-                <option value="giallo">Giallo</option>
-                <option value="fantasy">Fantasy</option>
-                <option value="storico">Storico</option>
-            </select>
+            <div class="row">
+                <!-- Genre -->
+                <div class="col-lg-4">
+                    <label for="genreSelect" class="form-label">Genere</label>
+                    <select class="form-select mb-3" id="genreSelect" aria-label="Seleziona un genere">
+                        <option selected>Scegli il genere</option>
+                        <option value="giallo">Giallo</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="storico">Storico</option>
+                    </select>
+                </div>
 
-            <!-- Publication Year -->
-            <div>
-                <label for="exampleInputTitle" class="form-label">Anno di Pubblicazione</label>
-                <input type="number" class="form-control" id="exampleInputTitle" placeholder="Inserisci l'anno"
-                    aria-label="Inserisci l'anno" pattern="[0-9]{4}" title="Inserisci un anno valido (es. 2025)">
-            </div>
+                <!-- Publication Year -->
+                <div class="col-lg-4">
+                    <label for="exampleInputTitle" class="form-label">Anno di Pubblicazione</label>
+                    <input type="number" class="form-control" id="exampleInputTitle" placeholder="Inserisci l'anno"
+                        aria-label="Inserisci l'anno" pattern="[0-9]{4}" title="Inserisci un anno valido (es. 2025)">
+                </div>
 
-            <!-- ISBN Code -->
-            <div class="my-3">
-                <label for="isbnInput" class="form-label">ISBN&num;</label>
-                <input type="text" class="form-control" id="isbnInput" placeholder="Inserisci il codice ISBN&num;"
-                    aria-label="Inserisci il codice ISBN&num;" pattern="\d{10,13}"
-                    title="Inserisci un ISBN valido (10 o 13 cifre)">
+                <!-- ISBN Code -->
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <label for="isbnInput" class="form-label">ISBN&num;</label>
+                    <input type="text" class="form-control" id="isbnInput" placeholder="Inserisci il codice ISBN&num;"
+                        aria-label="Inserisci il codice ISBN&num;" pattern="\d{10,13}"
+                        title="Inserisci un ISBN valido (10 o 13 cifre)">
+                </div>
             </div>
 
             <hr class="my-5">
