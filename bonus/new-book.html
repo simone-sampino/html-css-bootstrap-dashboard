@@ -17,8 +17,8 @@
         <!-- #region Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./img/duck.png" width="50" height="50" alt="logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/duck.png" width="50" height="50" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -79,6 +79,22 @@
                 <option value="fantasy">Fantasy</option>
                 <option value="storico">Storico</option>
             </select>
+
+            <!-- Publication Year -->
+            <div>
+                <label for="exampleInputTitle" class="form-label">Anno di Pubblicazione</label>
+                <input type="number" class="form-control" id="exampleInputTitle" placeholder="Inserisci l'anno"
+                    aria-label="Inserisci l'anno" pattern="[0-9]{4}" title="Inserisci un anno valido (es. 2025)">
+            </div>
+
+            <!-- ISBN Code -->
+            <div class="my-3">
+                <label for="isbnInput" class="form-label">ISBN&num;</label>
+                <input type="text" class="form-control" id="isbnInput" placeholder="Inserisci il codice ISBN&num;"
+                    aria-label="Inserisci il codice ISBN&num;" pattern="\d{10,13}"
+                    title="Inserisci un ISBN valido (10 o 13 cifre)">
+            </div>
+
         </form>
     </main>
 
