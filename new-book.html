@@ -47,25 +47,39 @@
     </header>
 
     <main class="container">
-        <div>
-            <h1 class="my-4">Nuovo Libro</h1>
-            <form action="">
-                <div class="row">
-                    <div class="col">
-                        <label for="nome-autore">Nome Autore</label>
-                        <input type="text" class="form-control" id="nome-autore" name="nome-autore"
-                            placeholder="Inserisci il nome dell'autore" aria-label="Inserisci il nome dell'autore">
-                    </div>
-                    <div class="col">
-                        <label for="cognome-autore">Cognome Autore</label>
-                        <input type="text" class="form-control" id="cognome-autore" name="cognome-autore"
-                            placeholder="Inserisci il cognome dell'autore"
-                            aria-label="Inserisci il cognome dell'autore">
-                    </div>
+        <h1 class="my-4">Nuovo Libro</h1>
+        <form action="">
+            <!-- Author Information -->
+            <div class="row">
+                <div class="col">
+                    <label for="nome-autore" class="mb-2">Nome Autore</label>
+                    <input type="text" class="form-control" id="nome-autore" name="nome-autore"
+                        placeholder="Inserisci il nome dell'autore" aria-label="Inserisci il nome dell'autore">
                 </div>
-            </form>
-        </div>
+                <div class="col">
+                    <label for="cognome-autore" class="mb-2">Cognome Autore</label>
+                    <input type="text" class="form-control" id="cognome-autore" name="cognome-autore"
+                        placeholder="Inserisci il cognome dell'autore" aria-label="Inserisci il cognome dell'autore">
+                </div>
+            </div>
 
+            <!-- Book Title -->
+            <div class="my-3">
+                <label for="exampleInputTitle" class="form-label">Titolo</label>
+                <input type="text" class="form-control" id="exampleInputTitle"
+                    placeholder="Inserisci il titolo del libro" aria-label="Inserisci il titolo del libro">
+                <div id="titleHelp" class="form-text">Titolo versione italiana</div>
+            </div>
+
+            <!-- Genre -->
+            <label for="genreSelect" class="form-label">Genere</label>
+            <select class="form-select mb-3" id="genreSelect" aria-label="Seleziona un genere">
+                <option selected>Scegli il genere</option>
+                <option value="giallo">Giallo</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="storico">Storico</option>
+            </select>
+        </form>
     </main>
 
 </body>
